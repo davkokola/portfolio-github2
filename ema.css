@@ -410,7 +410,7 @@ footer{
     }
 
     nav h1{
-        font-size: 18px; /* réduit pour mobile */
+        font-size: 9px; /* réduit pour mobile */
         margin: 0;
     }
 
@@ -418,12 +418,12 @@ footer{
         display: flex;
         flex-direction: row; /* 🔥 reste en ligne */
         align-items: center;
-        gap: 10px;
-        margin-right: 10px;
+        gap: 5px;
+        margin-right: 5px;
     }
 
     .onglets a{
-        font-size: 12px; /* texte plus petit */
+        font-size: 6px; /* texte plus petit */
     }
 }
 
