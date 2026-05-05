@@ -1,0 +1,75 @@
+/* pour le fichier aide */
+
+h2 {
+    text-align: center;
+    font-size: 30px;
+    margin: 40px 0 20px;
+    font-weight: bold;
+    color: white;
+    border: 1px solid #222;
+    background-color: black;
+    padding: 40px;
+    margin: 0px;
+}
+
+/* CONTAINER */
+.aide-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 25px;
+    padding: 20px 40px;
+}
+
+/* BOX */
+.aide-box {
+    background: #000;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.08);
+    transition: all 0.3s ease;
+    position: relative;
+    overflow: hidden;
+}
+
+/* EFFET HOVER */
+.aide-box:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 15px 35px rgba(0,0,0,0.15);
+}
+
+/* PETITE BARRE EN HAUT (effet pro) */
+.aide-box::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 5px;
+    background: linear-gradient(to right, #ff7a00, #ffb347);
+}
+
+/* TITRE BOX */
+.aide-box h3 {
+    margin-bottom: 10px;
+    color: #fff;
+    font-size: 18px;
+}
+
+/* TEXTE */
+.aide-box p {
+    font-family: 'Saira Stencil One', cursive;
+    font-size: 25px;
+    color: #fff;
+    line-height: 1.6;
+}
+
+/* RESPONSIVE (téléphone) */
+@media (max-width: 600px) {
+    .aide-container {
+        padding: 15px;
+    }
+
+    h2 {
+        font-size: 24px;
+    }
+}

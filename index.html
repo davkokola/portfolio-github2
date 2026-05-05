@@ -3,185 +3,81 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>vente_de_robes</title>
+        <title>Ice_Dress.com</title>
         <link rel="stylesheet" href="ema.css">
     </head>
     <body>
         <nav id="accueil">
 
-            <h1>Ice Dress</h1>
+            <img src="coloris/logo1.jpg" >
 
-            <div class="search-box">
-                <input type="text" placeholder="Rechercher une robe...">
-                <button>🔍</button>
-            </div>
+            <h1>Les Coloris De Chez Nous</h1>
 
             <div id="panier-icon" onclick="ouvrirPanier()">
                 🛒<span id="count">0</span>
             </div>
 
-            <div class="onglets" id="menu">
-                <a href="#accueil">Accueil</a>
-                <a href="#produits">Nos produits</a>
-                <a href="#avis">Avis clients</a>
-                <a href="#à propos">À propos</a>
-                <a href="#contact">Contact</a>
-            </div> 
-
-              <div class="menu-toggle" onclick="toggleMenu()">
+            <div class="menu-toggle" onclick="toggleMenu()">
                 ☰
             </div>
-
+            
+            <div class="onglets" id="menu">
+                <a href="#accueil">Accueil</a>
+                <a href="produit.html" >Nos produits</a>
+                <a href="#a-propos">À propos</a>
+                <a href="#contact">Contact</a>
+                <a href="aide.html">Aide</a>
+            </div> 
+              
         </nav>
 
         <header>
-            <h1>Ice Dress</h1>
-            <h3>Des vêtements sur mesure qui révèlent votre style</h3>
-            <button onclick="window.location.href='#produits'">parcourir</button>
+                           
         </header>
 
-        <section class="section1" id="produits">
-            <h1>Nos Produits</h1>
+        <main>
 
-             <div class="div1">
 
-                <div>
-                    <img src="robe2.png" alt="robes bleu">
-                    <h3>Robe bleu</h3>
-                    <p>2500 FCFA</p>
-                    <button onclick="ajouterPanier('Robe bleu',2500)">Ajouter</button>
+            <section class="section2">
+                <div id="dz">
+                    <h1 class="h1-section2">LCN</h1>
+                    <h2>Des vêtements sur mesure qui révèlent votre style</h2>
+                    <button onclick="window.location.href='produit.html'">parcourir</button>
                 </div>
-                
-                <div>
-                    <img src="robe3.png" alt="robes orange">
-                    <h3>Robe orange</h3>
-                    <p>2500 FCFA</p>
-                    <button onclick="ajouterPanier('Robe orange',2500)">Ajouter</button>
-                </div>
+            </section>  
+        
+            <section class="section3" id="a-propos">
+                <h1>À propos</h1>
+                <p class="p1-section3">Bienvenue chez <strong>Les Coloris De Chez Nous </strong>! Notre passion est de Révéler<br>
+                    votre beauté à travers des robes élégantes et tendance.<br>
+                    Chaque pièce est choisie avec amour pour vous offrir<br>
+                    confort, style et raffinement.
+                </p>
+            </section>
 
-                <div>
-                    <img src="robe4.png" alt="robes">
-                    <h3>Robe rouge</h3>
-                    <p>2500 FCFA</p>
-                    <button onclick="ajouterPanier('Robe rouge',2500)">Ajouter</button>
-                </div>
-                
-            </div>
-        </section>
-
-        <section class="section2" id="avis">
-            <h1>Avis clients</h1>
-            <p>⭐⭐⭐⭐⭐ "Très belle robe, bonne qualité !" - Awa</p>
-            <p>⭐⭐⭐⭐⭐ "Le tissu ne se déchire pas, très résistant!" - Mariam</p>
-            <p>⭐⭐⭐⭐⭐ "Exactement comme sur la photo, je recommande à 100%" - Ruth</p>
-            <p>⭐⭐⭐⭐⭐ "Livraison rapide, je recommande !" - Bintou</p>
-            <p>⭐⭐⭐⭐⭐ "J’ai commandé pour un mariage, la robe était parfaite 😍 merci Ice Dress !" - Patricia</p>
-            <p>⭐⭐⭐⭐⭐ "Les finitions sont propres, on voit que c’est du sérieux." - Elodie</p>
-        </section>
-
-        <section class="section3" id="à propos">
-            <h1>À propos</h1>
-            <p class="p1">Bienvenue chez Ice Dress! Notre passion est de Révéler<br>
-                 votre beauté à travers des robes élégantes et tendance.<br>
-                 Chaque pièce est choisie avec amour pour vous offrir <br>
-                 confort, style et raffinement.
-            </p>
-        </section>
-
-        <div id="panier-box">
-            <h2>Mon Panier</h2>
-            <ul id="liste-panier"></ul>
-            <p>Total : <span id="total">0</span> FCFA</p>
-            <button onclick="commander()">Commander</button>
-            <button onclick="fermerPanier()">Fermer</button>
-        </div>
+        </main>
 
         <footer id="contact">
 
             <address>
-            📞 <a href="tel:+2250103820631">+225 01 03 82 06 31</a><br><br>
-            📧 <a href="mailto:davikokola10@mail@gmail.com">Envoyer un mail</a><br><br>
+            📞 <a href="tel:+2250103820631" id="tel">+225 01 03 82 06 31</a><br><br>
+            📧 <a href="mailto:destineedegloire@gmail.com" id="email">Envoyer un mail</a><br><br>
             <a class="btn" href="https://wa.me/2250103820631">whatsapp</a>
         </address>
 
-            <p>&copy;2026 Ice Dress | l'élégance à l'état pur!</p>            
+            <p>&copy;2026 Les Coloris De Chez Nous | l'élégance à l'état pur!</p>            
             
         </footer>
 
-        <script>
-            function toggleMenu() {
-                document.getElementById("menu").classList.toggle("active");
-            }
-        </script>
+        <div id="panier-box">
+            <h2>🛒 Mon Panier</h2>
+            <ul id="liste-panier"></ul>
+            <p>Total : <span id="total">0</span> FCFA</p>
+            <button onclick="commander()" id="button1">Commander</button>
+            <button onclick="fermerPanier()" id="button2">Fermer</button>
+        </div>
 
-        <script>
-            let panier = [];
-            let count = document.getElementById("count");
-
-            function ajouterPanier(produit) {
-                panier.push(produit);
-                count.textContent = panier.length;
-                alert(produit + " ajouté au panier !");
-            }
-        </script>
-
-
+        <script src="dress.js"></script>
         
-
-        <script>
-
-            let Panier = [];
-
-            function ajouterPanier(nom, prix) {
-                panier.push({nom, prix});
-                updatePanier();
-            }
-
-            function updatePanier() {
-                let liste = document.getElementById("liste-panier");
-                let total = document.getElementById("total");
-                let count = document.getElementById("count");
-
-                liste.innerHTML = "";
-                let somme = 0;
-
-                panier.forEach((item, index) => {
-                    somme += item.prix;
-
-                    liste.innerHTML += `
-                        <li>
-                            ${item.nom} - ${item.prix} FCFA
-                            <button onclick="supprimer(${index})">❌</button>
-                        </li>
-                    `;
-                });
-
-                total.textContent = somme;
-                count.textContent = panier.length;
-            }
-
-            function supprimer(index) {
-                panier.splice(index, 1);
-                updatePanier();
-            }
-
-            function ouvrirPanier() {
-                document.getElementById("panier-box").style.display = "block";
-            }
-
-            function fermerPanier() {
-                document.getElementById("panier-box").style.display = "none";     
-            }
-
-            function commander() {
-                let message = "Bonjour, je veux commander :%0A";
-
-                panier.forEach(item => {
-                    message += "- " + item.nom + " (" + item.prix + " FCFA)%0A";
-                });
-
-                window.open("https://wa.me/2250103820631?text=" + message);
-            }
-        </script>
     </body>
 </html>
