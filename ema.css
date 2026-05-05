@@ -383,7 +383,7 @@ footer{
     text-align: center;
 }
 
-/* RESPONSIVE MOBILE */
+/* RESPONSIVE MOBILE 
 
 @media screen and (max-width: 680px){
 
@@ -396,7 +396,41 @@ footer{
         flex-direction: column;
         align-items: center;
     }
+}*/
+
+
+
+
+@media screen and (max-width: 680px){
+
+    nav {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    nav h1{
+        font-size: 18px; /* réduit pour mobile */
+        margin: 0;
+    }
+
+    .onglets{
+        display: flex;
+        flex-direction: row; /* 🔥 reste en ligne */
+        align-items: center;
+        gap: 10px;
+        margin-right: 10px;
+    }
+
+    .onglets a{
+        font-size: 12px; /* texte plus petit */
+    }
 }
+
+
+
+
+
 
   
 .onglets a{
