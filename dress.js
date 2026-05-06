@@ -109,7 +109,7 @@ function commander() {
     save();
     afficherPanier();
 
-    let message = "Salut, je souhaite commander: ";
+   /* let message = "Salut, je souhaite commander: ";
 
     let total = 0;
 
@@ -118,7 +118,35 @@ function commander() {
         total += p.prix * p.quantite;
     });
 
-    message += `- ${p.nom} x ${p.quantite} = ${p.prix * p.quantite} FCFA %0A`;/*`%0A💰 Total : ${total} FCFA`;*/
+    message += `%0A💰 Total : ${total} FCFA`;
+    */
+
+
+
+
+    let message = "Bonjour, je souhaite commander :%0A%0A";
+
+    let total = 0;
+
+    panier.forEach(p => {
+        message += `👗 ${p.nom}%0A`;
+        message += `Quantité : ${p.quantite}%0A`;
+        message += `Prix : ${p.prix * p.quantite} FCFA%0A%0A`;
+    
+        total += p.prix * p.quantite;
+    });
+
+    message += `💰 Total à payer : ${total} FCFA`;
+
+
+
+
+
+
+
+
+
+    
 
     // 🔴 Remplace par TON numéro WhatsApp (format international)
     let numero = "2250103820631";
