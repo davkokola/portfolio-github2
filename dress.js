@@ -143,7 +143,8 @@ function commander() {
 
     function commander() { 
         let message = "Bonjour, je veux commander :%0A"; 
-        panier.forEach(item => { message += "- " + item.nom + " (" + item.prix + " FCFA)%0A"; }); 
+        panier.forEach(item => { 
+            message += "- " + item.nom + " (" + item.prix + " FCFA)%0A"; }); 
         
         window.open("https://wa.me/2250103820631?text=" + message); 
     }
