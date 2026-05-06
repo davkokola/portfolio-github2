@@ -124,7 +124,7 @@ function commander() {
 
 
 
-  /*  let message = "Bonjour, je souhaite commander :%0A%0A";
+   let message = "Bonjour, je souhaite commander :%0A%0A";
 
     let total = 0;
 
@@ -136,18 +136,8 @@ function commander() {
         total += p.prix * p.quantite;
     });
 
-    message += `💰 Total à payer : ${total} FCFA`;*/
+    message += `💰 Total à payer : ${total} FCFA`;
 
-
-    let message = "Bonjour, je veux commander :%0A"; 
-
-    function commander() { 
-        let message = "Bonjour, je veux commander :%0A"; 
-        panier.forEach(item => { 
-            message += "- " + item.nom + " (" + item.prix + " FCFA)%0A"; }); 
-        
-        window.open("https://wa.me/2250103820631?text=" + message); 
-    }
 
 
 
@@ -158,7 +148,7 @@ function commander() {
 
     
 
-   /* // 🔴 Remplace par TON numéro WhatsApp (format international)
+    // 🔴 Remplace par TON numéro WhatsApp (format international)
     let numero = "2250103820631";
 
     let url = `https://wa.me/${numero}?text=${message}`;
@@ -170,7 +160,7 @@ function commander() {
     panier = [];
     save();
     afficherPanier();
-}*/
+}
 
 // 🔹 MESSAGE VISUEL
 function showMessage(txt) {
