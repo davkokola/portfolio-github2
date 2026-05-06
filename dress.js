@@ -109,7 +109,7 @@ function commander() {
     save();
     afficherPanier();
 
-    let message = "🛒 *Commande Coloris De Chez Nous* %0A%0A";
+    let message = "Salut, je souhaite commander: ";
 
     let total = 0;
 
@@ -118,7 +118,7 @@ function commander() {
         total += p.prix * p.quantite;
     });
 
-    message += `%0A💰 Total : ${total} FCFA`;
+    message += `- ${p.nom} x ${p.quantite} = ${p.prix * p.quantite} FCFA %0A`;/*`%0A💰 Total : ${total} FCFA`;*/
 
     // 🔴 Remplace par TON numéro WhatsApp (format international)
     let numero = "2250103820631";
