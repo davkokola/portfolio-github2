@@ -3,6 +3,89 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Ice_Dress.com</title>
+        <link rel="stylesheet" href="ema.css">
+    </head>
+    <body>
+
+        <nav id="accueil">
+
+            <img src="coloris/logo1.jpg" >
+
+            <div id="panier-icon" onclick="ouvrirPanier()">
+                🛒<span id="count">0</span>
+            </div>
+
+            <div class="menu-toggle" onclick="toggleMenu()">
+                ☰
+            </div>
+            
+            <div class="onglets" id="menu">
+                <a href="#accueil">Accueil</a>
+                <a href="produit.html" >Nos produits</a>
+                <a href="#a-propos">À propos</a>
+                <a href="#contact">Contact</a>
+                <a href="aide.html">Aide</a>
+            </div> 
+             
+        </nav>
+
+        <h1 class="h1A">Les Coloris De Chez Nous</h1>
+
+        <header>
+                           
+        </header>
+
+        <main>
+
+
+            <section class="section2">
+                <div id="dz">
+                    <h1 class="h1-section2">LCN</h1>
+                    <h2>Des vêtements sur mesure qui révèlent votre style</h2>
+                    <button onclick="window.location.href='produit.html'">parcourir</button>
+                </div>
+            </section>  
+        
+            <section class="section3" id="a-propos">
+                <h1>À propos</h1>
+                <p class="p1-section3">Bienvenue chez <strong>Les Coloris De Chez Nous </strong>! Notre passion est de Révéler<br>
+                    votre beauté à travers des robes élégantes et tendance.<br>
+                    Chaque pièce est choisie avec amour pour vous offrir<br>
+                    confort, style et raffinement.
+                </p>
+            </section>
+
+        </main>
+
+        <footer id="contact">
+
+            <address>
+            📞 <a href="tel:+2250103820631" id="tel">+225 01 03 82 06 31</a><br><br>
+            📧 <a href="mailto:destineedegloire@gmail.com" id="email">Envoyer un mail</a><br><br>
+            <a class="btn" href="https://wa.me/2250103820631">whatsapp</a>
+        </address>
+
+            <p>&copy;2026 Les Coloris De Chez Nous | l'élégance à l'état pur!</p>            
+            
+        </footer>
+
+        <div id="panier-box">
+            <h2>🛒 Mon Panier</h2>
+            <ul id="liste-panier"></ul>
+            <p>Total : <span id="total">0</span> FCFA</p>
+            <button onclick="commander()" id="button1">Commander</button>
+            <button onclick="fermerPanier()" id="button2">Fermer</button>
+        </div>
+
+        <script src="dress.js"></script>
+        
+    </body>
+</html><!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Les_Coloris_De_Chez_Nous.com</title>
         <link rel="stylesheet" href="ema.css">
     </head>
