@@ -105,11 +105,11 @@ function commander() {
     }
 
     alert("Commande validée 🎉");
-    panier = [];
+    /*panier = [];
     save();
     afficherPanier();
 
-   /* let message = "Salut, je souhaite commander: ";
+    let message = "Salut, je souhaite commander: ";
 
     let total = 0;
 
