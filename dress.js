@@ -105,11 +105,11 @@ function commander() {
     }
 
     alert("Commande validée 🎉");
-    /*panier = [];
+    panier = [];
     save();
     afficherPanier();
 
-    let message = "Salut, je souhaite commander: ";
+    /*let message = "Salut, je souhaite commander: ";
 
     let total = 0;
 
@@ -139,7 +139,7 @@ function commander() {
     message += `💰 Total à payer : ${total} FCFA`;*/
 
 
-
+    let message = "Bonjour, je veux commander :%0A"; 
 
     function commander() { 
         let message = "Bonjour, je veux commander :%0A"; 
