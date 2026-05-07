@@ -104,9 +104,9 @@ function commander() {
     }
 
     alert("Commande validée 🎉");
-    panier = [];
+    /*panier = [];
     save();
-    afficherPanier();
+    afficherPanier();*/
 
     /*let message = "Salut, je souhaite commander: ";*/
     let message = "Bonjour, je veux commander :%0A"; 
@@ -116,9 +116,12 @@ function commander() {
     /*panier.forEach(p => {*/
     panier.forEach(item => {
         /*message += `- ${p.nom} x ${p.quantite} = ${p.prix * p.quantite} FCFA %0A`;*/
-        message += "- " + item.nom + " (" + item.prix + " FCFA)%0A";
+        message += `- ${item.nom} x ${item.quantite} = ${item.prix * item.quantite} FCFA %0A`;
+        total += item.prix * item.quantite;
         /*total += p.prix * p.quantite;*/
     });
+
+    message += `%0A💰 Total : ${total} FCFA`;
 
     /*message += `%0A💰 Total : ${total} FCFA`;*/
 
