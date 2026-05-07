@@ -89,8 +89,7 @@ function supprimerProduit(index) {
 function ouvrirPanier() {
     let box = document.getElementById("panier-box");
     box.style.display = "block";
-    /*box.style.transform = "translateY(-10px)";*/
-    box.style.transform = "translate(-50%, -50%)";
+    box.style.transform = "translateY(-10px)";
 }
 
 
