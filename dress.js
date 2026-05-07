@@ -95,8 +95,7 @@ function ouvrirPanier() {
 // 🔹 FERMER PANIER
 function fermerPanier() {
     document.getElementById("panier-box").style.display = "none";
-}
-
+}                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   
 
 function commander() {
     if (panier.length === 0) {
@@ -109,16 +108,23 @@ function commander() {
     save();
     afficherPanier();
 
-    let message = "Salut, je souhaite commander: ";
-
+    /*let message = "Salut, je souhaite commander: ";*/
+    let message = "Bonjour, je veux commander :%0A"; 
+    
     let total = 0;
 
-    panier.forEach(p => {
-        message += `- ${p.nom} x ${p.quantite} = ${p.prix * p.quantite} FCFA %0A`;
-        total += p.prix * p.quantite;
+    /*panier.forEach(p => {*/
+    panier.forEach(item => {
+        /*message += `- ${p.nom} x ${p.quantite} = ${p.prix * p.quantite} FCFA %0A`;*/
+        message += "- " + item.nom + " (" + item.prix + " FCFA)%0A";
+        /*total += p.prix * p.quantite;*/
     });
 
-    message += `%0A💰 Total : ${total} FCFA`;
+    /*message += `%0A💰 Total : ${total} FCFA`;*/
+
+
+    
+
     
   
     // 🔴 Remplace par TON numéro WhatsApp (format international)
