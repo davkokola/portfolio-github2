@@ -58,7 +58,7 @@ nav img{
     display: none;
     position: fixed;
     top: 60px;
-    right: 500px;
+    margin: auto;
     background: white;
     padding: 20px;
     width: 300px;
