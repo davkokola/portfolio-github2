@@ -549,7 +549,7 @@ footer a:hover{
 }
 
 
-/* RESPONSIVE MOBILE*/
+/* RESPONSIVE MOBILE
 
 @media screen and (max-width: 680px){
 
@@ -571,4 +571,96 @@ footer a:hover{
         margin: auto;
     }
 
+}
+*/
+
+
+
+
+
+
+
+
+@media screen and (max-width: 768px){
+
+    body{
+        overflow-x: hidden;
+    }
+
+    nav{
+        flex-direction: column;
+        align-items: center;
+        padding: 10px;
+    }
+
+    .h1A{
+        font-size: 28px;
+        text-align: center;
+    }
+
+    .onglets{
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        margin: 10px 0;
+        left: 0;
+    }
+
+    .onglets a{
+        display: block;
+        padding: 10px;
+        text-align: center;
+    }
+
+    .conteneur-div1{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .produit{
+        width: 90%;
+    }
+
+    .produit img{
+        width: 100%;
+        height: auto;
+    }
+
+    #panier-box{
+        width: 90%;
+        left: 50%;
+        transform: translateX(-50%);
+        top: 80px;
+        margin-top: 0;
+    }
+
+    .search-box{
+        width: 100%;
+        justify-content: center;
+        margin: 10px 0;
+    }
+
+    .search-box input{
+        width: 70%;
+    }
+
+    button{
+        max-width: 100%;
+    }
+
+    header{
+        background-size: cover;
+        background-position: center;
+    }
+
+    .section2,
+    .section1,
+    .section3{
+        margin: 10px;
+        padding: 20px;
+    }
+
+    p{
+        font-size: 18px;
+    }
 }
