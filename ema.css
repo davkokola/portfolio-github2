@@ -61,7 +61,7 @@ nav img{
     position: fixed;
     top: 60px;
     left: 50%;
-    background: white;
+    background: red;
     padding: 20px;
     width: 300px;
     box-shadow: 0 0 10px rgba(0,0,0,0.3);
@@ -622,21 +622,7 @@ footer a:hover{
     }
 
 
-    #panier-box {
-    display: none;
-    position: fixed;
-    color: red;
-    top: 60px;
-    left: 50%;
-    background: white;
-    padding: 20px;
-    width: 300px;
-    box-shadow: 0 0 10px rgba(0,0,0,0.3);
-    z-index: 1000;
-    border-radius: 20px;
-    transition: all 0.3s ease;
-    margin-top: 30px;
-    max-height: 450px;
+   
 }
 
     
