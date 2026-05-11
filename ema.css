@@ -615,10 +615,14 @@ footer a:hover{
         display: flex;
     }
 
-    .onglets a #panier-box{
+    .onglets a {
         width: 100%;
         text-align: center;
         padding: 12px;
+    }
+
+    #panier-box{
+        bakground: green;
     }
     
 
