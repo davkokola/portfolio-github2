@@ -599,8 +599,6 @@ footer a:hover{
     }
 
     .onglets{
-        flex-direction: column;
-        align-items: center;
         width: 100%;
         margin: 10px 0;
         left: 0;
