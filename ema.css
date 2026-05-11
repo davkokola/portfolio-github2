@@ -615,11 +615,12 @@ footer a:hover{
         display: flex;
     }
 
-    .onglets a{
+    .onglets a #panier-box{
         width: 100%;
         text-align: center;
         padding: 12px;
     }
+    
 
     .conteneur-div1{
         flex-direction: column;
