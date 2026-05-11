@@ -610,24 +610,6 @@ footer a:hover{
         font-size: 32px;
     }
 
-    .search-box{
-        display: flex;
-        flex-wrap: wrap;
-    }
-
-    .onglets{
-        position: absolute;
-        top: 100%;
-        left: 0;
-        width: 100%;
-        background: white;
-        display: none;
-        flex-direction: column;
-        align-items: center;
-        padding: 15px 0;
-        border-radius: 0 0 20px 20px;
-        box-shadow: 0 5px 10px rgba(0,0,0,0.2);
-    }
 
     .onglets.active{
         display: flex;
@@ -651,20 +633,6 @@ footer a:hover{
     .produit img{
         width: 100%;
         height: auto;
-    }
-
-    #panier-box{
-        position: absolute;
-        top: 100%;
-        left: 0;
-        width: 100%;
-        background: white;
-        display: none;
-        flex-direction: column;
-        align-items: center;
-        padding: 15px 0;
-        border-radius: 0 0 20px 20px;
-        box-shadow: 0 5px 10px rgba(0,0,0,0.2);
     }
 
     .section1,
