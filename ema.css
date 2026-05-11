@@ -580,7 +580,6 @@ footer a:hover{
 
 
 
-
 @media screen and (max-width: 768px){
 
     body{
@@ -589,25 +588,54 @@ footer a:hover{
 
     nav{
         display: flex;
+        flex-direction: row;
+        justify-content: space-between;
         align-items: center;
         padding: 10px;
     }
 
+    nav img{
+        width: 60px;
+    }
+
     .h1A{
-        font-size: 28px;
+        font-size: 22px;
+        margin: 0;
         text-align: center;
+        line-height: 1.1;
+        flex: 1;
+    }
+
+    .menu-toggle{
+        font-size: 32px;
+    }
+
+    .search-box{
+        display: none;
     }
 
     .onglets{
-        width: 100%;
-        margin: 10px 0;
+        position: absolute;
+        top: 100%;
         left: 0;
+        width: 100%;
+        background: white;
+        display: none;
+        flex-direction: column;
+        align-items: center;
+        padding: 15px 0;
+        border-radius: 0 0 20px 20px;
+        box-shadow: 0 5px 10px rgba(0,0,0,0.2);
+    }
+
+    .onglets.active{
+        display: flex;
     }
 
     .onglets a{
-        display: block;
-        padding: 10px;
+        width: 100%;
         text-align: center;
+        padding: 12px;
     }
 
     .conteneur-div1{
@@ -616,7 +644,7 @@ footer a:hover{
     }
 
     .produit{
-        width: 90%;
+        width: 92%;
     }
 
     .produit img{
@@ -626,33 +654,15 @@ footer a:hover{
 
     #panier-box{
         width: 90%;
+        max-width: 320px;
         left: 50%;
         transform: translateX(-50%);
         top: 80px;
         margin-top: 0;
     }
 
-    .search-box{
-        width: 100%;
-        justify-content: center;
-        margin: 10px 0;
-    }
-
-    .search-box input{
-        width: 70%;
-    }
-
-    button{
-        max-width: 100%;
-    }
-
-    header{
-        background-size: cover;
-        background-position: center;
-    }
-
-    .section2,
     .section1,
+    .section2,
     .section3{
         margin: 10px;
         padding: 20px;
@@ -660,5 +670,14 @@ footer a:hover{
 
     p{
         font-size: 18px;
+    }
+
+    button{
+        font-size: 16px;
+    }
+
+    header{
+        background-size: cover;
+        background-position: center;
     }
 }
