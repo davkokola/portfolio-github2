@@ -1135,10 +1135,12 @@ footer a:hover{
     #panier-box{
         position: fixed;
 
+        background: blue;
+
         top: 80px;
 
-        left: 100%;
-        transform: translateX(100%);
+        left: 50%;
+        transform: translateX(-50%);
 
         width: 90%;
         max-width: 330px;
@@ -1146,6 +1148,6 @@ footer a:hover{
         padding: 15px;
         border-radius: 10px;
 
-        margin: 0;
+        margin-left: 300;
     }
 }
