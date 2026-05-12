@@ -578,7 +578,8 @@ footer a:hover{
 
     #panier-box{
 
-        margin: auto;
+        width: 10px;
+        height: 20px;
     }
 
 }
