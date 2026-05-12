@@ -512,6 +512,11 @@ footer a{
     color: white;
 }
 
+footer a{
+    color: white !important;
+    text-decoration: none;
+}
+
 footer a:hover{
     transform: scale(1.1);
 }
