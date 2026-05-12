@@ -368,6 +368,17 @@ address {
     font-style: normal;
     margin-bottom: 10px;
 }
+adresse #tel #mail{
+
+     text-decoration: none;
+    margin: 10px;
+    color: black;
+    font-size: 20px;
+    padding-bottom: 10px;
+    font-family: 'Nunito', sans-serif;
+    font-weight: 700;
+    
+}
 
 /* FOOTER */
 
@@ -547,7 +558,6 @@ footer a{
 footer a:hover{
     transform: scale(1.1);
 }
-
 
 /* RESPONSIVE MOBILE*/
 
