@@ -1130,22 +1130,3 @@ footer a:hover{
     }
 }
 
-@media screen and (max-width: 680px){
-
-    #panier-box{
-        position: fixed;
-
-        top: 80px;
-
-       /* left: 50%;
-        transform: translateX(-50%);*/
-
-        width: 90%;
-        max-width: 330px;
-
-        padding: 15px;
-        border-radius: 10px;
-
-        margin-left: 300px;
-    }
-}
