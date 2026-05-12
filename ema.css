@@ -479,7 +479,18 @@ p{
         filter: brightness(1.2);
     }
 }
-
+#tel,
+#email,{
+     text-decoration: none;
+    margin: 10px;
+    color: black;
+    font-size: 20px;
+    padding-bottom: 10px;
+    font-family: 'Nunito', sans-serif;
+    font-weight: 700;
+    margin: 5px 0;
+    
+}
 #tel,
 #email,
 .btn,
@@ -507,13 +518,6 @@ a:hover,
 footer a{
     display: inline-block;
     transition: transform 0.3s ease;
-    text-decoration: none;
-    margin: 10px;
-    color: black;
-    font-size: 20px;
-    padding-bottom: 10px;
-    font-family: 'Nunito', sans-serif;
-    font-weight: 700;
 }
 
 
