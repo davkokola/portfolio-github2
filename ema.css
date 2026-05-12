@@ -221,10 +221,9 @@ header{
     background: url(coloris/logos1.jpg);
     background-size: contain;
     height: 400px;
-}
-
-header{
     border-bottom: 5px  solid #029; 
+    padding: 20px;
+    animation: bgMove 5s infinite alternate;
 }
 
 
@@ -397,10 +396,6 @@ footer{
     margin: 5px 0;
  }
 
-header{
-    padding: 20px;
-}
-
 #button1{
     background-color: #0e0;
     padding: 10px;
@@ -477,11 +472,6 @@ p{
 }
 
 
-
-header button {
-    animation: zoomIn 2s ease;
-}
-
 @keyframes zoomIn {
     from {
         transform: scale(0);
@@ -491,19 +481,6 @@ header button {
         transform: scale(1);
         opacity: 1;
     }
-}
-
-header button:hover {
-    background-color: green;
-    color: white;
-    font-family: "Nunito", sans-serif;
-    font-weight: 400;
-    transform: scale(1.1);
-    transition: 0.3s;
-}
-
-header {
-    animation: bgMove 5s infinite alternate;
 }
 
 @keyframes bgMove {
