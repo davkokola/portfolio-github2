@@ -53,33 +53,25 @@ nav img{
   cursor: pointer;
 
 }
+
+
+
 #panier-box {
     display: none;
     position: fixed;
     top: 60px;
-
     left: 50%;
-    right: auto;
-    transform: translateX(-50%);
-
     background: white;
     padding: 20px;
-
     width: 300px;
-    max-width: 95%;
-
     box-shadow: 0 0 10px rgba(0,0,0,0.3);
-
     z-index: 1000;
-
     border-radius: 20px;
-
     transition: all 0.3s ease;
-
+    margin-top: 30px;
     max-height: 450px;
-
-    overflow-y: auto;
 }
+
 #panier-box h2{
     font-family: 'Nunito', sans-serif;
 }
@@ -363,6 +355,11 @@ header{
     box-sizing: border-box;
 }
 
+@media (max-width: 768px) {
+    .conteneur-div1 > div {
+        flex: 0 0 100%;
+    }
+}
 .produit h3{
     margin-top: 50px;
 }
@@ -370,17 +367,6 @@ header{
 address {
     font-style: normal;
     margin-bottom: 10px;
-}
-adresse #tel #mail{
-
-     text-decoration: none;
-    margin: 10px;
-    color: black;
-    font-size: 20px;
-    padding-bottom: 10px;
-    font-family: 'Nunito', sans-serif;
-    font-weight: 700;
-    
 }
 
 /* FOOTER */
@@ -562,14 +548,8 @@ footer a:hover{
     transform: scale(1.1);
 }
 
+
 /* RESPONSIVE MOBILE*/
-
-
-@media (max-width: 768px) {
-    .conteneur-div1 > div {
-        flex: 0 0 100%;
-    }
-}
 
 @media screen and (max-width: 680px){
 
@@ -584,5 +564,11 @@ footer a:hover{
     }
 }
 
+@media screen and (max-width: 680px){
 
+    #panier-box{
 
+        margin: auto;
+    }
+
+}
