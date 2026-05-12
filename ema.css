@@ -12,11 +12,7 @@ body{
     font-family: 'Courier New', Courier, monospace;
 }
 
-body.no-scroll {
-    overflow: hidden;
-}
-
-/* NAVIGATION */
+/* ================= NAV ================= */
 
 nav{
     display: flex;
@@ -24,7 +20,7 @@ nav{
     justify-content: space-between;
     position: relative;
     align-items: center;
-    border-bottom: 5px solid #029; 
+    border-bottom: 5px solid #029;
     padding: 10px;
 }
 
@@ -35,7 +31,7 @@ nav img{
 }
 
 .h1A{
-    background-color: #F5DEDD; 
+    background-color: #F5DEDD;
     border-radius: 20px;
     padding: 10px;
     text-align: center;
@@ -46,21 +42,33 @@ nav img{
     margin: 10px 0;
 }
 
-/* PANIER ICON */
+/* ================= PANIER ================= */
+
 #panier-icon {
-  position: relative;
-  font-size: 40px;
-  cursor: pointer;
+    position: relative;
+    font-size: 40px;
+    cursor: pointer;
 }
 
-/* PANIER BOX (UNIQUE ET CORRIGÉ) */
+#count {
+    position: absolute;
+    top: -5px;
+    right: -10px;
+    background: green;
+    color: white;
+    font-size: 20px;
+    padding: 3px 6px;
+    border-radius: 50%;
+    font-weight: bold;
+}
+
+/* PANIER BOX UNIQUE (PC + MOBILE) */
 #panier-box {
     display: none;
     position: fixed;
-    top: 60px;
 
+    top: 70px;
     left: 50%;
-    right: auto;
     transform: translateX(-50%);
 
     background: white;
@@ -72,13 +80,9 @@ nav img{
     box-shadow: 0 0 10px rgba(0,0,0,0.3);
 
     z-index: 1000;
-
     border-radius: 20px;
 
-    transition: all 0.3s ease;
-
     max-height: 450px;
-
     overflow-y: auto;
 }
 
@@ -86,20 +90,8 @@ nav img{
     font-family: 'Nunito', sans-serif;
 }
 
-/* COUNT */
-#count {
-  position: absolute;
-  top: -5px;
-  right: -10px;
-  background: green;
-  color: white;
-  font-size: 20px;
-  padding: 3px 6px;
-  border-radius: 50%;
-  font-weight: bold;
-}
+/* ================= SEARCH ================= */
 
-/* SEARCH */
 .search-box {
     display: flex;
     align-items: center;
@@ -115,24 +107,25 @@ nav img{
 
 .search-box button {
     border: none;
-    background: #F5DEDD; 
+    background: #F5DEDD;
     color: white;
     border-radius: 0 20px 20px 0;
     cursor: pointer;
     font-size: 20px;
 }
 
-/* MENU */
-.onglets{ 
-    display: none; 
-    flex-direction: column; 
-    align-items: center; 
+/* ================= MENU ================= */
+
+.onglets{
+    display: none;
+    flex-direction: column;
+    align-items: center;
     background: white;
-    position: absolute; 
-    top: 60px; 
-    left: 0px; 
-    width: 200px; 
-    padding: 10px; 
+    position: absolute;
+    top: 60px;
+    left: 0;
+    width: 200px;
+    padding: 10px;
     z-index: 1000;
     border-radius: 20px;
 }
@@ -149,25 +142,8 @@ nav img{
     font-weight: 700;
 }
 
-/* BUTTON */
-.btn{ 
-    background: #27ae60; 
-    padding: 5px 15px; 
-    border-radius: 60px; 
-    color: white; 
-    text-decoration: none; 
-    font-size: 15px; 
-}
+/* ================= GLOBAL LINKS ================= */
 
-/* MENU TOGGLE */
-.menu-toggle {
-    display: block;
-    font-size: 50px;
-    cursor: pointer;
-    color: black;
-}
-
-/* LINKS */
 a{
     text-decoration: none;
     margin: 10px;
@@ -177,49 +153,44 @@ a{
     font-weight: 700;
 }
 
-/* HEADER */
-.section2{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    background-color: aqua; 
-    padding: 30px;
-    margin: 20px;
-    color: #029;
-    text-align: center;
-    animation: couleurAnimation1 10s infinite; 
-    height: 400px;  
+/* ================= BUTTON ================= */
+
+.btn{
+    background: #27ae60;
+    padding: 5px 15px;
+    border-radius: 60px;
+    color: white;
+    text-decoration: none;
+    font-size: 15px;
 }
 
-@keyframes couleurAnimation1{
-    0%{background-color:#029;}
-    33%{background-color:#F5DEDD;}
-    66%{background-color:rgba(255,217,0,0.661);}
-    100%{background-color:#F5DEDD;}
-}
+/* ================= HEADER ================= */
 
 header{
     background: url(coloris/logos1.jpg);
     background-size: contain;
     height: 400px;
-    border-bottom: 5px solid #029; 
+    border-bottom: 5px solid #029;
     padding: 20px;
 }
 
-/* SECTIONS */
+/* ================= SECTIONS ================= */
+
 .section1,
+.section2,
 .section3{
-    display: flex; 
-    flex-direction: column; 
-    align-items: center; 
-    background-color: aqua; 
-    padding: 30px; 
-    color: #029; 
-    margin: 20px; 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: aqua;
+    padding: 30px;
+    margin: 20px;
+    color: #029;
     text-align: center;
 }
 
-/* PRODUITS */
+/* ================= PRODUITS ================= */
+
 .conteneur-div1{
     display: flex;
     flex-wrap: wrap;
@@ -227,20 +198,20 @@ header{
     gap: 20px;
 }
 
-.produit {
+.produit{
     flex: 0 0 calc(33.33% - 20px);
-    box-sizing: border-box;
 }
 
-.produit img {
+.produit img{
     width: 100%;
     height: 430px;
     object-fit: cover;
     border-radius: 40px;
 }
 
-/* IMAGE VIEWER */
-#image-viewer {
+/* ================= IMAGE VIEWER ================= */
+
+#image-viewer{
     display: none;
     position: fixed;
     top: 0;
@@ -251,18 +222,17 @@ header{
     justify-content: center;
     align-items: center;
     z-index: 2000;
-    overflow: auto;
     padding: 20px;
 }
 
-#image-viewer img {
+#image-viewer img{
     width: 100vw;
     height: 120vh;
-    object-fit: contain; 
-    border-radius: 10px;
+    object-fit: contain;
 }
 
-/* FOOTER */
+/* ================= FOOTER ================= */
+
 footer{
     display: flex;
     flex-direction: column;
@@ -273,9 +243,10 @@ footer{
     text-align: center;
 }
 
-/* RESPONSIVE */
-@media (max-width: 768px) {
-    .conteneur-div1 > div {
+/* ================= RESPONSIVE ================= */
+
+@media (max-width: 768px){
+    .conteneur-div1 > div{
         flex: 0 0 100%;
     }
 }
@@ -292,9 +263,10 @@ footer{
         align-items: center;
     }
 
+    /* PANIER MOBILE FIXÉ */
     #panier-box{
-        top: 70px;
-        width: 95%;
+        top: 80px;
+        width: 90%;
         max-width: 330px;
         padding: 15px;
         border-radius: 10px;
