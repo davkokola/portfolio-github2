@@ -573,4 +573,20 @@ footer a:hover{
         align-items: center;
     }
 }
+@media screen and (max-width: 680px){
+
+    #panier-box{
+        position: fixed;
+        top: 80px;
+
+        left: 50%;
+        transform: translateX(-50%);
+
+        width: 90%;
+        max-width: 320px;
+
+        margin: 0;
+    }
+
+}
 
