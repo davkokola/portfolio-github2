@@ -121,7 +121,7 @@ function commander() {
 
     
     // 🔴 Remplace par TON numéro WhatsApp (format international)
-    let numero = "2250103820631";
+    let numero = "2250705663000";
 
     let url = `https://wa.me/${numero}?text=${message}`;
 
