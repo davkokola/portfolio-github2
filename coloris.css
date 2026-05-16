@@ -216,15 +216,11 @@ a{
 }
 
 header{
-    background: url(coloris/logos1.jpg);
+    background: url(coloris/logos1.webp);
     background-size: contain;
     height: 400px;
-}
-
-header{
     border-bottom: 5px  solid #029; 
 }
-
 
 #dz{
     margin-top: 100px;
