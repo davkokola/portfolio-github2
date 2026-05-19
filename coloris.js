@@ -1,4 +1,4 @@
-if(window.location.pathname.includes("produit.html")){
+if(window.location.pathname.includes("index.html")){
     alert("Bienvenue sur la page produit !");
 }
 
