@@ -1,5 +1,5 @@
 if(window.location.pathname.includes("index.html")){
-    alert("Bienvenue sur la page produit !");
+    alert("Cliquez sur parcourir pour voir les tenues !");
 }
 
 // 🔹 PANIER (chargement depuis localStorage)
