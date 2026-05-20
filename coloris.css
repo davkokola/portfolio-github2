@@ -239,8 +239,8 @@ header{
 .button-header{
     padding: 15px 30px;
     border: none;
-    border-radius: 10px;
-    font-size: 30px;
+    border-radius: 20px;
+    font-size: 25px;
     cursor: pointer;
     background-color: #029;
     color: white;
