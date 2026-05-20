@@ -1,7 +1,3 @@
-if(window.location.pathname.includes("index.html")){
-    alert("Cliquez sur parcourir pour voir les tenues !");
-}
-
 // 🔹 PANIER (chargement depuis localStorage)
 let panier = JSON.parse(localStorage.getItem("panier")) || [];
 
